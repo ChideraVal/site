@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abuja CAC Registration | Business Registration & CAC Services</title>
+
+    <meta name="description"
+        content="Abuja CAC Registration provides professional business name registration, company registration, NGO registration, SCUML, trademark registration and other CAC services in Nigeria.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           1. GENERAL STYLES & COLOURS
+        ========================================================= */
+
+        :root {
+            --primary: #142b4a;
+            --primary-dark: #0d1e35;
+            --gold: #d6a84f;
+            --gold-light: #f3e6c8;
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --text: #5c6675;
+            --heading: #142b4a;
+            --border: #e8ebef;
+            --shadow: 0 12px 35px rgba(20, 43, 74, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px;
+        }
+
+        .section-label {
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            color: var(--heading);
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.3;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .section-description {
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 27px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background: #e6bd6b;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        /* =========================================================
+           2. NAVIGATION
+        ========================================================= */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--white);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 43px;
+            height: 43px;
+            background: var(--primary);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: var(--primary);
+            font-size: 16px;
+            line-height: 1.3;
+        }
+
+        .logo-text span {
+            font-size: 10px;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: var(--gold);
+            color: var(--primary-dark);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           3. HERO SECTION
+        ========================================================= */
+
+        .hero {
+            min-height: 680px;
+            padding: 155px 0 90px;
+            background:
+                linear-gradient(90deg, rgba(13, 30, 53, 0.97), rgba(13, 30, 53, 0.75)),
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80') center/cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 720px;
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: rgba(214, 168, 79, 0.15);
+            border: 1px solid rgba(214, 168, 79, 0.5);
+            color: var(--gold);
+            padding: 9px 15px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 62px);
+            line-height: 1.2;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 45px;
+            margin-top: 55px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat strong {
+            display: block;
+            color: var(--gold);
+            font-size: 29px;
+            line-height: 1.3;
+        }
+
+        .hero-stat span {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+        }
+
+        /* =========================================================
+           4. SERVICES SECTION
+        ========================================================= */
+
+        .services {
+            background: var(--light);
+        }
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .service-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .service-card:nth-child(even) .service-image {
+            order: 2;
+        }
+
+        .service-image {
+            min-height: 310px;
+        }
+
+        .service-image img {
+            height: 100%;
+            min-height: 310px;
+        }
+
+        .service-content {
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .service-number {
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 23px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .service-content p {
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 22px;
+        }
+
+        .service-link {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 4px;
+        }
+
+        /* =========================================================
+           5. ABOUT SECTION
+        ========================================================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            height: 480px;
+            border-radius: 10px;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: 25px;
+            right: -25px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .about-badge strong {
+            display: block;
+            font-size: 30px;
+            color: var(--gold);
+        }
+
+        .about-badge span {
+            font-size: 11px;
+        }
+
+        .about-content .section-label {
+            text-align: left;
+        }
+
+        .about-content .section-title {
+            text-align: left;
+        }
+
+        .about-content p {
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 18px;
+        }
+
+        .about-highlight {
+            border-left: 3px solid var(--gold);
+            padding: 12px 18px;
+            background: var(--light);
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 14px;
+            margin: 25px 0;
+        }
+
+        /* =========================================================
+           6. WHY CHOOSE US
+        ========================================================= */
+
+        .why-us {
+            background: var(--primary-dark);
+        }
+
+        .why-us .section-title {
+            color: var(--white);
+        }
+
+        .why-us .section-description {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 32px 23px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .why-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .why-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(214, 168, 79, 0.12);
+            border-radius: 8px;
+            margin-bottom: 23px;
+        }
+
+        .why-icon svg {
+            width: 27px;
+            height: 27px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .why-card h3 {
+            color: var(--white);
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .why-card p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 12px;
+            line-height: 1.9;
+        }
+
+        /* =========================================================
+           7. TESTIMONIALS / GOOGLE REVIEWS
+        ========================================================= */
+
+        .reviews {
+            background: var(--light);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 9px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-stars {
+            color: #e4ad36;
+            font-size: 19px;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .review-text {
+            color: var(--text);
+            font-size: 13px;
+            line-height: 1.9;
+            flex-grow: 1;
+            margin-bottom: 25px;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid var(--border);
+            padding-top: 18px;
+        }
+
+        .reviewer-avatar {
+            width: 42px;
+            height: 42px;
+            background: var(--primary);
+            color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .reviewer-info strong {
+            display: block;
+            color: var(--primary);
+            font-size: 13px;
+        }
+
+        .reviewer-info span {
+            font-size: 11px;
+            color: #89919c;
+        }
+
+        /* =========================================================
+           8. LOCATION SECTION
+        ========================================================= */
+
+        .location-card {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .location-info {
+            padding: 45px;
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .location-info h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .location-detail {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .location-detail-icon {
+            color: var(--gold);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .location-detail-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        .location-detail strong {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .location-detail span {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .map-container {
+            min-height: 420px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border: none;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* =========================================================
+           9. OPENING HOURS
+        ========================================================= */
+
+        .opening-hours {
+            background: var(--light);
+        }
+
+        .hours-card {
+            max-width: 750px;
+            margin: auto;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 35px 40px;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .hours-row strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .hours-row span {
+            text-align: right;
+        }
+
+        /* =========================================================
+           10. FAQ SECTION
+        ========================================================= */
+
+        .faq-container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            margin-bottom: 13px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 21px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background: none;
+            border: none;
+            text-align: left;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .faq-question span:last-child {
+            color: var(--gold);
+            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 24px 22px;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 250px;
+        }
+
+        .faq-item.active .faq-question span:last-child {
+            transform: rotate(45deg);
+        }
+
+        /* =========================================================
+           11. CALL TO ACTION
+        ========================================================= */
+
+        .cta-section {
+            padding: 85px 0;
+            background:
+                linear-gradient(rgba(13, 30, 53, 0.94), rgba(13, 30, 53, 0.94)),
+                url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80') center/cover;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .cta-content h2 {
+            color: var(--white);
+            font-size: clamp(29px, 4vw, 42px);
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+
+        .cta-content p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        /* =========================================================
+           12. CONTACT SECTION
+        ========================================================= */
+
+        .contact {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 28px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-light);
+            color: var(--primary);
+            border-radius: 8px;
+            font-size: 22px;
+        }
+
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .contact-card p {
+            font-size: 12px;
+            word-break: break-word;
+        }
+
+        .contact-card a {
+            color: var(--text);
+        }
+
+        .contact-card a:hover {
+            color: var(--gold);
+        }
+
+        /* =========================================================
+           13. FOOTER
+        ========================================================= */
+
+        .footer {
+            background: var(--primary-dark);
+            padding: 65px 0 25px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-brand .logo-text strong {
+            color: var(--white);
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            line-height: 1.9;
+            margin-top: 20px;
+        }
+
+        .footer-links h3 {
+            color: var(--white);
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 12px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 22px;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           14. FLOATING WHATSAPP BUTTON
+        ========================================================= */
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            width: 58px;
+            height: 58px;
+            background: #25d366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: #ffffff;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* =========================================================
+           15. RESPONSIVE DESIGN
+        ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .nav-links {
+                gap: 17px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .review-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                gap: 40px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .nav-container {
+                min-height: 72px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 0 5%;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.35s ease, padding 0.35s ease;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            }
+
+            .nav-links.active {
+                max-height: 450px;
+                padding: 15px 5% 25px;
+            }
+
+            .nav-links a {
+                padding: 13px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 14px;
+            }
+
+            .nav-links .nav-cta {
+                text-align: center;
+                margin-top: 15px;
+                border: none;
+            }
+
+            .hero {
+                min-height: 650px;
+                padding-top: 130px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .service-card {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card:nth-child(even) .service-image {
+                order: 0;
+            }
+
+            .service-image,
+            .service-image img {
+                min-height: 260px;
+                max-height: 300px;
+            }
+
+            .service-content {
+                padding: 30px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 380px;
+            }
+
+            .about-badge {
+                right: 15px;
+            }
+
+            .location-card {
+                grid-template-columns: 1fr;
+            }
+
+            .location-info {
+                padding: 35px;
+            }
+
+            .map-container {
+                min-height: 350px;
+            }
+
+            .map-container iframe {
+                min-height: 350px;
+            }
+
+            .hours-card {
+                padding: 25px;
+            }
+
+        }
+
+        @media (max-width: 520px) {
+
+            .container {
+                width: 91%;
+            }
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .section-header {
+                margin-bottom: 38px;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-stats {
+                gap: 23px;
+            }
+
+            .hero-stat strong {
+                font-size: 25px;
+            }
+
+            .why-grid,
+            .review-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-card {
+                padding: 27px;
+            }
+
+            .review-card {
+                padding: 25px;
+            }
+
+            .hours-card {
+                padding: 20px;
+            }
+
+            .hours-row {
+                font-size: 12px;
+                gap: 10px;
+            }
+
+            .location-info {
+                padding: 27px;
+            }
+
+            .faq-question {
+                padding: 18px;
+                font-size: 13px;
+            }
+
+            .faq-answer p {
+                padding: 0 18px 18px;
+            }
+
+            .footer-main {
+                flex-direction: column;
+                gap: 35px;
+            }
+
+            .whatsapp-float {
+                width: 52px;
+                height: 52px;
+                bottom: 18px;
+                right: 18px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+
+                <div class="logo-icon">A</div>
+
+                <div class="logo-text">
+                    <strong>ABUJA</strong>
+                    <span>CAC Registration</span>
+                </div>
+
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+
+                <a href="https://wa.me/2347073552208" class="nav-cta">
+                    Get Started
+                </a>
+
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         HERO SECTION
+    ========================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ✓ Accredited CAC Registration Agent
+                </div>
+
+                <h1>
+                    Your Business Journey Starts With
+                    <span>Proper Registration.</span>
+                </h1>
+
+                <p class="hero-description">
+                    From business name registration to company incorporation
+                    and other CAC services, Abuja CAC Registration makes the
+                    process straightforward, efficient and stress-free.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="https://wa.me/2347073552208" class="btn btn-primary">
+                        Register Your Business →
+                    </a>
+
+                    <a href="#services" class="btn btn-outline">
+                        Explore Our Services
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+                        <strong>1,000+</strong>
+                        <span>Successful Registrations</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>100%</strong>
+                        <span>Commitment to Service</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SERVICES SECTION
+    ========================================================== -->
+
+    <section class="section services" id="services">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">What We Do</div>
+
+                <h2 class="section-title">
+                    Our Registration & Business Services
+                </h2>
+
+                <p class="section-description">
+                    We provide a range of registration and post-incorporation
+                    services to help individuals, businesses and organisations
+                    meet their regulatory requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-list">
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+                            alt="Business registration and incorporation documents">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">01 / OUR SERVICES</div>
+
+                        <h3>Business Name & Company Registration</h3>
+
+                        <p>
+                            Start your business on the right foundation with
+                            professional business name registration and company
+                            incorporation services through the Corporate
+                            Affairs Commission.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80"
+                            alt="NGO and community organization meeting">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">02 / OUR SERVICES</div>
+
+                        <h3>NGO & Church Registration</h3>
+
+                        <p>
+                            We assist religious organisations, churches,
+                            foundations and non-governmental organisations
+                            with their registration requirements.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+                            alt="Corporate compliance and financial auditing paperwork">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">03 / OUR SERVICES</div>
+
+                        <h3>SCUML Registration</h3>
+
+                        <p>
+                            Get assistance with SCUML registration and the
+                            documentation required for applicable businesses
+                            and organisations.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 4 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80"
+                            alt="Trademark, copyright and legal contracts">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">04 / OUR SERVICES</div>
+
+                        <h3>Trademark, Patent & Copyright Registration</h3>
+
+                        <p>
+                            Protect your business identity, creative works
+                            and intellectual property through the relevant
+                            registration processes.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 5 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80"
+                            alt="Newspaper publications and public notices">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">05 / OUR SERVICES</div>
+
+                        <h3>Newspaper Publications</h3>
+
+                        <p>
+                            Get assistance with newspaper publication
+                            requirements for applicable business and
+                            organisational processes.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 6 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80"
+                            alt="Business records and annual returns documentation">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">06 / OUR SERVICES</div>
+
+                        <h3>Change of Name & Annual Returns</h3>
+
+                        <p>
+                            We assist with business name changes, company
+                            updates and annual returns to help businesses
+                            keep their records up to date.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE 7 -->
+
+                <div class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+                            alt="Corporate boardroom meeting for post-incorporation changes">
+                    </div>
+
+                    <div class="service-content">
+
+                        <div class="service-number">07 / OUR SERVICES</div>
+
+                        <h3>Post-Incorporation Services</h3>
+
+                        <p>
+                            We provide assistance with post-incorporation
+                            changes, including updates to registered addresses,
+                            directors, shareholders and other company details.
+                        </p>
+
+                        <a href="https://wa.me/2347073552208" class="service-link">
+                            Get Started →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         ABOUT US
+    ========================================================== -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+                        alt="Professional business consultancy team working together">
+
+                    <div class="about-badge">
+                        <strong>1,000+</strong>
+                        <span>Successful Registrations</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="section-label">About Abuja CAC</div>
+
+                    <h2 class="section-title">
+                        Helping Businesses Take the Right First Step
+                    </h2>
+
+                    <p>
+                        Abuja CAC Registration is an accredited agent of the
+                        Corporate Affairs Commission (CAC), providing
+                        registration and business support services to
+                        individuals, entrepreneurs and organisations.
+                    </p>
+
+                    <p>
+                        Having successfully registered over 1,000 companies,
+                        we understand the importance of making business
+                        registration as straightforward and stress-free
+                        as possible.
+                    </p>
+
+                    <p>
+                        Our focus is on providing efficient service, clear
+                        communication and reliable assistance throughout
+                        the registration process.
+                    </p>
+
+                    <div class="about-highlight">
+                        Your business deserves a professional start.
+                        Let us help you get there.
+                    </div>
+
+                    <a href="https://wa.me/2347073552208" class="btn btn-primary">
+                        Talk to Us →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHY CHOOSE US
+    ========================================================== -->
+
+    <section class="section why-us">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">Why Abuja CAC?</div>
+
+                <h2 class="section-title">
+                    Why Choose Us?
+                </h2>
+
+                <p class="section-description">
+                    We are committed to making your registration experience
+                    efficient, straightforward and professionally handled.
+                </p>
+
+            </div>
+
+
+            <div class="why-grid">
+
+                <!-- CARD 1 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L20 5V11C20 16 16.5 20 12 22C7.5 20 4 16 4 11V5L12 2Z"></path>
+                            <path d="M8 12L11 15L16 9"></path>
+                        </svg>
+
+                    </div>
+
+                    <h3>Accredited Expertise</h3>
+
+                    <p>
+                        Work with an accredited CAC agent who understands
+                        the business registration process.
+                    </p>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L14.5 8.5L20.5 9L16 13L17.5 19L12 16L6.5 19L8 13L3.5 9L9.5 8.5L12 3Z"></path>
+                        </svg>
+
+                    </div>
+
+                    <h3>Proven Experience</h3>
+
+                    <p>
+                        Over 1,000 successful company registrations
+                        demonstrate our experience in the field.
+                    </p>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M12 7V12L15 14"></path>
+                        </svg>
+
+                    </div>
+
+                    <h3>Efficient Service</h3>
+
+                    <p>
+                        We value your time and work to make the registration
+                        process smooth and straightforward.
+                    </p>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                            <path d="M7 9H17"></path>
+                            <path d="M7 13H17"></path>
+                            <path d="M7 17H13"></path>
+                        </svg>
+
+                    </div>
+
+                    <h3>Comprehensive Solutions</h3>
+
+                    <p>
+                        From initial registration to post-incorporation
+                        services, we offer a range of business solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CUSTOMER REVIEWS
+    ========================================================== -->
+
+    <section class="section reviews">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">Client Experiences</div>
+
+                <h2 class="section-title">
+                    What Our Clients Say
+                </h2>
+
+                <p class="section-description">
+                    We take pride in the experiences of our clients.
+                    Here's what some of them have to say about our services.
+                </p>
+
+            </div>
+
+
+            <div class="review-grid">
+
+                <!-- REVIEW 1 -->
+
+                <div class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        Excellent company registration service!
+
+                        I had a fantastic experience with Abuja CAC Registration.
+                        Their team was professional and efficient, guiding me
+                        through every step with clear communication. They
+                        handled everything smoothly and kept me updated
+                        throughout the process. The process was quick and
+                        transparent. Kudos to the team!
+                    </p>
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">FM</div>
+
+                        <div class="reviewer-info">
+                            <strong>Florence Monday</strong>
+                            <span>Google Review</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REVIEW 2 -->
+
+                <div class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        Excellent customer service! They registered my company
+                        within the promised timeframe, and my documents were
+                        delivered right to my doorstep.
+                    </p>
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">CA</div>
+
+                        <div class="reviewer-info">
+                            <strong>Comfort Abraham</strong>
+                            <span>Google Review</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REVIEW 3 -->
+
+                <div class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        Amazing service! I got great value for my money.
+                        The entire process was very easy and stress-free.
+                    </p>
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">KO</div>
+
+                        <div class="reviewer-info">
+                            <strong>Kanyinsola Oleyede</strong>
+                            <span>Google Review</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REVIEW 4 -->
+
+                <div class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        Really fast service! They made the entire process
+                        stress-free, and my certificate was ready in
+                        less than 10 days.
+                    </p>
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">WA</div>
+
+                        <div class="reviewer-info">
+                            <strong>Wuese Anjam</strong>
+                            <span>Google Review</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REVIEW 5 -->
+
+                <div class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        Tested and trusted! Smooth and fast delivery,
+                        and I got great value for my money.
+                    </p>
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">AA</div>
+
+                        <div class="reviewer-info">
+                            <strong>Adetayo Ayomitide</strong>
+                            <span>Google Review</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         LOCATION
+    ========================================================== -->
+
+    <section class="section" id="location">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">Find Us</div>
+
+                <h2 class="section-title">
+                    Visit Our Office
+                </h2>
+
+                <p class="section-description">
+                    Have questions or need assistance with your registration?
+                    You can visit our office in Bwari, Abuja.
+                </p>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <div class="location-info">
+
+                    <h3>Our Office Location</h3>
+
+                    <div class="location-detail">
+
+                        <div class="location-detail-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 0C7.802 0 4 3.403 4 7.602C4 11.8 7.469 16.812 12 24C16.531 16.812 20 11.8 20 7.602C20 3.403 16.198 0 12 0ZM12 11C10.343 11 9 9.657 9 8C9 6.343 10.343 5 12 5C13.657 5 15 6.343 15 8C15 9.657 13.657 11 12 11Z"/></svg>
+                        </div>
+
+                        <div>
+                            <strong>Office Address</strong>
+
+                            <span>
+                                NO 14 Kogo 32 Cres, Bwari, Abuja 901101,
+                                Federal Capital Territory, Nigeria.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="location-detail">
+
+                        <div class="location-detail-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+
+                        <div>
+                            <strong>Phone Number</strong>
+
+                            <span>
+                                <a href="tel:+2347073552208">
+                                    0707 355 2208
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="location-detail">
+
+                        <div class="location-detail-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+
+                        <div>
+                            <strong>Email Address</strong>
+
+                            <span>
+                                <a href="mailto:abujacacregistration@gmail.com">
+                                    abujacacregistration@gmail.com
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://maps.app.goo.gl/PzZW3o6H5XthAF9n9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="map-link">
+
+                        Get Directions on Google Maps →
+
+                    </a>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <iframe
+                        src="https://maps.google.com/maps?q=Kogo%2032%20Cres%2C%20Bwari%2C%20Abuja%20901101&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Abuja CAC Registration Office Location">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         OPENING HOURS
+    ========================================================== -->
+
+    <section class="section opening-hours">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">When We're Available</div>
+
+                <h2 class="section-title">
+                    Our Opening Hours
+                </h2>
+
+                <p class="section-description">
+                    You're welcome to contact us or visit our office
+                    any time, as we are open around the clock.
+                </p>
+
+            </div>
+
+
+            <div class="hours-card">
+
+                <div class="hours-row">
+                    <strong>Monday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Tuesday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Wednesday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Thursday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Friday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Saturday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Sunday</strong>
+                    <span>Open 24 Hours</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FREQUENTLY ASKED QUESTIONS
+    ========================================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">Need Answers?</div>
+
+                <h2 class="section-title">
+                    Frequently Asked Questions
+                </h2>
+
+                <p class="section-description">
+                    Find answers to some common questions about
+                    business registration and our services.
+                </p>
+
+            </div>
+
+
+            <div class="faq-container">
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>What is CAC registration?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            CAC registration is the process of officially
+                            registering a business or organisation with
+                            Nigeria's Corporate Affairs Commission.
+                            It gives the business a recognised legal identity
+                            under the applicable registration category.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>What documents do I need to register a business?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            The required information and documents depend
+                            on the type of registration. Contact us with
+                            details about your business, and we'll guide
+                            you through the applicable requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How long does business registration take?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Processing time depends on the type of registration
+                            and the relevant approval process. Contact us to
+                            discuss the expected timeframe for your particular
+                            registration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Can you help with an already registered business?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. We provide post-incorporation services,
+                            including changes to registered addresses,
+                            directors and shareholders, as well as
+                            annual returns and other applicable updates.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Do you handle NGO and church registration?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. We assist with NGO, church and other
+                            applicable organisation registration processes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 6 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How can I get started?</span>
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Simply contact us through WhatsApp, phone or email.
+                            Tell us the service you need, and we'll guide you
+                            through the next steps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CALL TO ACTION
+    ========================================================== -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-content">
+
+                <h2>
+                    Ready to Make Your Business Official?
+                </h2>
+
+                <p>
+                    Take the next step towards building your business.
+                    Let Abuja CAC Registration help you through the process.
+                </p>
+
+                <a href="https://wa.me/2347073552208" class="btn btn-primary">
+                    Start Your Registration →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT SECTION
+    ========================================================== -->
+
+    <section class="section contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">Get in Touch</div>
+
+                <h2 class="section-title">
+                    Let's Talk About Your Business
+                </h2>
+
+                <p class="section-description">
+                    Have questions about our services or ready to begin
+                    your registration? Reach out to us through any
+                    of the channels below.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <!-- PHONE -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    </div>
+
+                    <div>
+                        <h3>Call Us</h3>
+
+                        <p>
+                            <a href="tel:+2347073552208">
+                                0707 355 2208
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    </div>
+
+                    <div>
+                        <h3>WhatsApp</h3>
+
+                        <p>
+                            <a
+                                href="https://wa.me/2347073552208"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                0707 355 2208
+
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+
+                    <div>
+                        <h3>Email Us</h3>
+
+                        <p>
+                            <a href="mailto:abujacacregistration@gmail.com">
+                                abujacacregistration@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- INSTAGRAM -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </div>
+
+                    <div>
+                        <h3>Instagram</h3>
+
+                        <p>
+                            <a
+                                href="https://www.instagram.com/abuja_cac_registration/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                @abuja_cac_registration
+
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo">
+
+                        <div class="logo-icon">A</div>
+
+                        <div class="logo-text">
+                            <strong>ABUJA</strong>
+                            <span>CAC Registration</span>
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Your trusted partner for business registration
+                        and related CAC services. Helping individuals
+                        and organisations take the right steps towards
+                        formal business registration.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="#home">Home</a>
+                    <a href="#services">Our Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#location">Our Location</a>
+                    <a href="#contact">Contact Us</a>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Our Services</h3>
+
+                    <a href="#services">Business Registration</a>
+                    <a href="#services">NGO & Church Registration</a>
+                    <a href="#services">SCUML Registration</a>
+                    <a href="#services">Trademark Registration</a>
+                    <a href="#services">Post-Incorporation Services</a>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Contact</h3>
+
+                    <a href="tel:+2347073552208">
+                        0707 355 2208
+                    </a>
+
+                    <a href="https://wa.me/2347073552208">
+                        0707 355 2208
+                    </a>
+
+                    <a href="mailto:abujacacregistration@gmail.com">
+                        Send an Email
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/abuja_cac_registration/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        Instagram
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="year"></span> Abuja CAC Registration.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         FLOATING WHATSAPP BUTTON
+    ========================================================== -->
+
+    <a
+        href="https://wa.me/2347073552208"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp">
+
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+
+    </a>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        /* MOBILE NAVIGATION */
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+
+            navLinks.classList.toggle('active');
+
+            menuToggle.textContent =
+                navLinks.classList.contains('active') ? '✕' : '☰';
+
+        });
+
+
+        /* CLOSE MOBILE MENU WHEN A LINK IS CLICKED */
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                navLinks.classList.remove('active');
+                menuToggle.textContent = '☰';
+
+            });
+
+        });
+
+
+        /* FAQ ACCORDION */
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+
+                const isActive = item.classList.contains('active');
+
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+
+            });
+
+        });
+
+
+        /* DYNAMIC COPYRIGHT YEAR */
+
+        document.getElementById('year').textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>
